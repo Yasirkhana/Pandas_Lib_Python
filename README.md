@@ -191,7 +191,7 @@ import pandas as pd
 
 
 ```python
-es1 =pd.DataFrame({"Names":["Yasir","Bilal","Sunny"],"Ids":[100,244,155]})                              #Important 
+es1 =pd.DataFrame({"Names":["david","bill","Anna"],"Ids":[100,244,155]})                              #Important 
 ```
 
 
@@ -227,17 +227,17 @@ es1
   <tbody>
     <tr>
       <th>0</th>
-      <td>Yasir</td>
+      <td>david</td>
       <td>100</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Bilal</td>
+      <td>bill</td>
       <td>244</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Sunny</td>
+      <td>Anna</td>
       <td>155</td>
     </tr>
   </tbody>
@@ -261,8 +261,8 @@ type(es1)
 
 ```python
 y1 = pd.DataFrame({                                           # DO PRACITCE ALOT
-    "Name":["Yasir","Bilal","Sunny"],
-    "Department":["COICS","BBA","Eng"],
+    "Name":["David","Bill","Anna"],
+    "Department":["CS","BBA","Eng"],
     "Sallary":[10000,50000,12341],
     "ProLang":["Python","None","None"]})
 y1
@@ -298,21 +298,21 @@ y1
   <tbody>
     <tr>
       <th>0</th>
-      <td>Yasir</td>
+      <td>David</td>
       <td>COICS</td>
       <td>10000</td>
       <td>Python</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Bilal</td>
+      <td>Bill</td>
       <td>BBA</td>
       <td>50000</td>
       <td>None</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Sunny</td>
+      <td>Anna</td>
       <td>Eng</td>
       <td>12341</td>
       <td>None</td>
@@ -410,9 +410,9 @@ y1.describe
 
 
     <bound method NDFrame.describe of     Name Department  Sallary ProLang
-    0  Yasir      COICS    10000  Python
-    1  Bilal        BBA    50000    None
-    2  Sunny        Eng    12341    None>
+    0  David       CS    10000  Python
+    1  Bill        BBA    50000    None
+    2  Anna        Eng    12341    None>
 
 
 
@@ -453,7 +453,7 @@ y1.iloc[0:1 , 0:1]      # Extacting 1st row and 1st col from y1
   <tbody>
     <tr>
       <th>0</th>
-      <td>Yasir</td>
+      <td>David</td>
     </tr>
   </tbody>
 </table>
@@ -491,7 +491,7 @@ y1.min()
 
 
 
-    Name          Bilal
+    Name          Bill
     Department      BBA
     Sallary       10000
     ProLang        None
@@ -507,7 +507,7 @@ y1.max()
 
 
 
-    Name           Yasir
+    Name           David
     Department       Eng
     Sallary        50000
     ProLang       Python
@@ -574,9 +574,9 @@ y1["Name"].value_counts()           # Count specific value occur
 
 
 
-    Yasir    1
-    Sunny    1
-    Bilal    1
+    David    1
+    Anna    1
+    Bill    1
     Name: Name, dtype: int64
 
 
@@ -616,21 +616,21 @@ y1.sort_values(by="Sallary")         # Sorting entries
   <tbody>
     <tr>
       <th>0</th>
-      <td>Yasir</td>
+      <td>David</td>
       <td>COICS</td>
       <td>10000</td>
       <td>Python</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Sunny</td>
+      <td>Anna</td>
       <td>Eng</td>
       <td>12341</td>
       <td>None</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Bilal</td>
+      <td>Bill</td>
       <td>BBA</td>
       <td>50000</td>
       <td>None</td>
